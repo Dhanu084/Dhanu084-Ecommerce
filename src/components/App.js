@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { products, cart } = this.props;
+    const { cart } = this.props;
 
     return (
       <Router>
@@ -26,13 +26,7 @@ class App extends React.Component {
               {
                 /*default props that contains info such as location,history. Passing this along with our posts */
               }
-              return (
-                <Home
-                  {...props}
-                  products={products}
-                  dispatch={this.props.dispatch}
-                />
-              );
+              return <Home {...props} dispatch={this.props.dispatch} />;
             }}
           />
 
@@ -45,7 +39,6 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    products: state.products,
     cart: state.cart,
   };
 }

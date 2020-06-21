@@ -6,6 +6,7 @@ export class Cart extends Component {
   render() {
     const { cart } = this.props;
     console.log(this.props);
+    console.log(localStorage.getItem("cart"));
     return (
       <div>
         {cart.map((item) => (

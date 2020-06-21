@@ -1,15 +1,45 @@
 import React, { Component } from "react";
-import { deleteProduct } from "../actions/product";
+import { deleteProduct, editProduct } from "../actions/product";
 import { addToCart } from "../actions/cart";
 
 export default class Products extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: this.props.product.name,
+      price: this.props.product.name,
+      edit: false,
+    };
+  }
   onDeleteProduct = (id) => {
     this.props.dispatch(deleteProduct(id));
   };
 
-  addToCart(product) {
+  addToCart = (product) => {
     this.props.dispatch(addToCart(product));
-  }
+  };
+  editProduct = () => {
+    this.setState({
+      edit: !this.state.edit,
+    });
+  };
+  handleChangeName = (e) => {
+    this.setState({
+      name: e.target.value,
+    });
+  };
+  handleChangePrice = (e) => {
+    this.setState({
+      price: e.target.value,
+    });
+  };
+  saveProduct = (id) => {
+    const { name, price } = this.state;
+    this.props.dispatch(editProduct(id, name, price));
+    this.setState({
+      edit: false,
+    });
+  };
   render() {
     console.log("products page", this.props);
     const { product } = this.props;
@@ -27,6 +57,7 @@ export default class Products extends Component {
               alt="decrease"
               className="action-icons"
               src="https://image.flaticon.com/icons/svg/598/598234.svg"
+              onClick={this.editProduct}
             />
 
             <img
@@ -43,6 +74,19 @@ export default class Products extends Component {
             />
           </div>
         </div>
+        {this.state.edit && (
+          <div>
+            <input
+              placeholder={product.name}
+              onChange={this.handleChangeName}
+            />
+            <input
+              placeholder={product.price}
+              onChange={this.handleChangePrice}
+            />
+            <button onClick={() => this.saveProduct(product.id)}>Save</button>
+          </div>
+        )}
       </div>
     );
   }

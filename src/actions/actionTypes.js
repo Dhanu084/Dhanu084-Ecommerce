@@ -4,3 +4,6 @@ export const DELETE_PRODUCT = "DELETE_PRODUCT";
 
 export const ADD_TO_CART = "ADD_TO_CART";
 export const DELETE_CART = "DELETE_CART";
+
+export const SORT_BY_PRICE = "SORT_BY_PRICE";
+export const EDIT_PRODUCT = "EDIT_PRODUCT";

@@ -2,6 +2,8 @@ import {
   GET_PRODUCTS_SUCCESS,
   ADD_PRODUCT,
   DELETE_PRODUCT,
+  SORT_BY_PRICE,
+  EDIT_PRODUCT,
 } from "./actionTypes";
 
 export function getproductsSuccess(products) {
@@ -60,5 +62,20 @@ export function deleteProduct(id) {
   return {
     type: DELETE_PRODUCT,
     id,
+  };
+}
+
+export function sort() {
+  return {
+    type: SORT_BY_PRICE,
+  };
+}
+
+export function editProduct(id, name, price) {
+  return {
+    type: EDIT_PRODUCT,
+    id,
+    name,
+    price,
   };
 }

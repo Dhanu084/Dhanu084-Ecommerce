@@ -11,13 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */
-
+body {
+  font-family: Helvetica;
+}
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
   height: 180px;
   width: 500px;
-  margin: 15px auto;
+  margin: 45px 20px;
+}
+.cart-item .left-block {
+  width: 50%;
 }
 .cart-item .right-block {
   padding: 0 20px;
@@ -48,4 +53,15 @@ h4 {
   position: absolute;
   top: 2px;
   left: 15px;
+}
+
+.btn {
+  padding: 5px 20px;
+  background-color: white;
+  margin: 5px;
+}
+
+input {
+  margin: 5px;
+  padding: 10px 20px;
 }
