@@ -1,8 +1,6 @@
 import { GET_PRODUCTS_SUCCESS } from "../actions/actionTypes";
 
-const initialProductState = [{}];
-
-export default function products(state = initialProductState, action) {
+export default function products(state = [], action) {
   switch (action.type) {
     case GET_PRODUCTS_SUCCESS:
       return action.products;
