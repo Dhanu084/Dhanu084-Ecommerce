@@ -1,6 +1,7 @@
 import { GET_PRODUCTS_SUCCESS } from "./actionTypes";
 
 export function getproductsSuccess(products) {
+  console.log("P", products);
   return {
     type: GET_PRODUCTS_SUCCESS,
     products,
@@ -15,7 +16,7 @@ export default function getproducts() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        getproductsSuccess(data[0]);
+        getproductsSuccess(data);
       });
   };
 }
