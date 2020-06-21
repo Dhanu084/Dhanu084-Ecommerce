@@ -1,17 +1,21 @@
 import React, { Component } from "react";
+import { Switch, Route, Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
     return (
       <div style={styles.nav}>
-        <div style={styles.cartIconContainer}>
-          <img
-            style={styles.cartIcon}
-            src="https://image.flaticon.com/icons/svg/2121/2121815.svg"
-            alt="cart-icon"
-          />
-          <span style={styles.cartCount}>{this.props.count}</span>
-        </div>
+        <Link to="/cart">
+          <div style={styles.cartIconContainer}>
+            <img
+              style={styles.cartIcon}
+              src="https://image.flaticon.com/icons/svg/2121/2121815.svg"
+              alt="cart-icon"
+            />
+
+            <span style={styles.cartCount}>{this.props.cart.length}</span>
+          </div>
+        </Link>
       </div>
     );
   }
