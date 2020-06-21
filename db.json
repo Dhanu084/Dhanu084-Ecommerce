@@ -9,17 +9,20 @@
     {
       "name": "Galaxy S20",
       "price": 73000,
-      "id": 2
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFIGqs4WPQjtqicZYyijukSaH8dol62Sliiq77Os2cppAyMU6vZxgJLWi-hH-pABheLlSeaQA&usqp=CAc"
     },
     {
       "name": "Iphone 11",
       "price": 100000,
-      "id": 3
+      "id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaLU-Xw11DTTUnPVcMth7Ml3KdHKz2zmoLr2xifd5D2u3LZ_HPPfoOM_lNp1JjiwCHW8GCuX6M&usqp=CAc"
     },
     {
       "name": "Sony Xperia",
       "price": 56000,
-      "id": 4
+      "id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPnenBBtxWCKjgn7Fm61apXOr8rtut1NnT0BxjRM3zFOt1q7dQ&usqp=CAU"
     },
     {
       "name": "Asus Zenfone 6Z",
