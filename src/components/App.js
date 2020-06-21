@@ -1,11 +1,11 @@
 import React from "react";
-import { data } from "../data/db.json";
+
 import { connect } from "react-redux";
 import getproducts from "../actions/product";
 
 class App extends React.Component {
   componentDidMount() {
-    this.props.dispatch(getproducts());
+    //this.props.dispatch(getproducts());
   }
 
   render() {
