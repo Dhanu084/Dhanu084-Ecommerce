@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "product1": {
+        "name": "Oneplus 8",
+        "price": 42000
+      }
+    }
+  ],
+  "cart": []
+}
