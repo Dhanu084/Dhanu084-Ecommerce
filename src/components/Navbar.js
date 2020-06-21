@@ -5,6 +5,9 @@ export default class Navbar extends Component {
   render() {
     return (
       <div style={styles.nav}>
+        <Link to="/">
+          <h4>Home</h4>
+        </Link>
         <Link to="/cart">
           <div style={styles.cartIconContainer}>
             <img

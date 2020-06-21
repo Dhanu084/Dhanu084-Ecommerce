@@ -9,7 +9,7 @@ export class Cart extends Component {
     return (
       <div>
         {cart.map((item) => (
-          <CartItems cart={item} key={item.id} />
+          <CartItems cart={item} dispatch={this.props.dispatch} key={item.id} />
         ))}
       </div>
     );

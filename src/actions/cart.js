@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "./actionTypes";
+import { ADD_TO_CART, DELETE_CART } from "./actionTypes";
 
 export function addToCart(product) {
   return (dispatch) => {
@@ -26,5 +26,12 @@ function addCart(product) {
   return {
     type: ADD_TO_CART,
     product,
+  };
+}
+
+export function deleteItemFromCart(id) {
+  return {
+    type: DELETE_CART,
+    id,
   };
 }
