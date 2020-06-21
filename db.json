@@ -3,27 +3,27 @@
     {
       "name": "Oneplus 8",
       "price": 42000,
-      "id":1
+      "id":1,
     },
     {
       "name": "Galaxy S20",
       "price": 73000,
-      "id":2
+      "id":2,
     },
     {
       "name":"Iphone 11",
       "price":100000,
-      "id":3
+      "id":3,
     },
     {
       "name":"Sony Xperia",
       "price":56000,
-      "id":4
+      "id":4,
     },
     {
       "name":"Asus Zenfone 6Z",
       "price":35000,
-      "id":5
+      "id":5,
     }
   ],
   "cart": []
